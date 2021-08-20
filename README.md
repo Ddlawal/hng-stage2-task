@@ -7,3 +7,5 @@ A single web page of an interactive resume with form.
    
 Lint to Zuri: https://internship.zuri.team/
 
+To start the resume app: `npm run start`   
+To run the compulsory task: `npm run compulsory`
