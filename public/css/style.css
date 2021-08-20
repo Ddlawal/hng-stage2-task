@@ -1,0 +1,79 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lavender;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.main-wrapper {
+    margin: 0 12%;
+}
+
+.address {
+    text-align: end;
+    font-weight: 500;
+    color: grey;
+}
+
+.container {
+    padding: 1rem 0;
+}
+
+.title,
+.link {
+    color: #8e7cc3;
+    font-weight: 900;
+}
+
+.sub-title {
+    font-size: 1.2rem;
+    color: grey;
+    font-weight: 700;
+}
+
+.submit-btn {
+    background-color: #8e7cc3;
+    color: white;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.submit-btn:hover {
+    color: lavender;
+}
+
+.profile {
+    height: 20rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.form-wrapper {
+    width: 30rem;
+    margin: 1rem;
+}
+
+.toast-wrapper {
+    position: absolute;
+    bottom: 3rem;
+    right: 5%;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.success-msg {
+    color: green;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.error-msg {
+    color: red;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 2rem;
+}

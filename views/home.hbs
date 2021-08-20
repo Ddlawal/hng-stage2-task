@@ -1,0 +1,25 @@
+<div class="main-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="images/profile.jpg" alt="profile" class="profile">
+            </div>
+            <div class="col-sm-9">
+                <div>{{> write-up}}</div>
+                <div class="sub-title">Contact Me</div>
+                <div class="row justify-content-start">
+                    {{> form}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="toast-wrapper row justify-content-end">
+    <div role="alert" aria-live="assertive" aria-atomic="true" id="toast" class="toast toast-success" data-autohide="false">
+        <div class="success-msg"></div>
+    </div>
+
+    <div role="alert" aria-live="assertive" aria-atomic="true" id="toast" class="toast toast-error" data-autohide="false">
+        <div class="error-msg"></div>
+    </div>
+</div>
