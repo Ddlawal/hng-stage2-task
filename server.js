@@ -39,7 +39,7 @@ app.post('/contactMe', async (req, res) => {
         await sendEmail(req.body)
         res.send('Email sent! Thanks for contacting me')
     } catch (error) {
-        ErrorHandler(error.message, error.status)
+        throw new ErrorHandler(error.message, error.status)
     }
 })
 

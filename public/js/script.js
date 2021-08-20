@@ -13,6 +13,8 @@ function submitForm() {
     const email = $('#email').val()
     const message = $('#message').val()
 
+    if ($('.submit-btn').text() === 'Submitting...') return
+
     if (!fullname) {
         $('.error-msg').html('Fullname is required')
         showToast()
@@ -31,6 +33,8 @@ function submitForm() {
         return
     }
 
+    $('.submit-btn').html('Submitting...')
+
     const postData = { fullname, email, message }
 
     axios
@@ -41,9 +45,11 @@ function submitForm() {
             $('#fullname').val('')
             $('#email').val('')
             $('#message').val('')
+            $('.submit-btn').html('Submit')
         })
         .catch(error => {
             $('.error-msg').html(error.message)
             showToast()
+            $('.submit-btn').html('Submit')
         })
 }
